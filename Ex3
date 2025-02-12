@@ -1,0 +1,9 @@
+Nota_Aluno = float(input("Digite a nota do Aluno: "))
+if Nota_Aluno >= 9:
+    print("Excelente, conceito A")
+elif Nota_Aluno >= 7:
+    print("Parabéns, conceito B")
+elif Nota_Aluno >= 5:
+    print("Você passou mas precisa melhorar, conceito C")
+else:
+    print(" Você foi Reprovado")
