@@ -1,0 +1,26 @@
+#Mostra as operções matemáticas
+print("1 - Adição")
+print("2 - Subtração")
+print("3 - Multiplicação")
+print("4 - Divisão")
+num = input("Selecione o tipo de operação: ")
+
+#Pede para escolhermos os números
+Numero_1 = float(input("Digite o número 1: "))
+Numero_2 = float(input("Digite o número 2: "))
+
+#Calcula todas as operações
+if num == "1":
+    Soma = (Numero_1 + Numero_2)
+    print(Numero_1, "+" ,Numero_2, "=" ,Soma)
+elif num == "2":
+    Subtracao = (Numero_1 - Numero_2)
+    print(Numero_1, "-" ,Numero_2, "=" ,Subtracao)
+elif num == "3":
+    Multiplicacao = (Numero_1 * Numero_2)
+    print(Numero_1, "*" ,Numero_2, "=" ,Multiplicacao)
+elif num == "4":
+     Divisao = (Numero_1 / Numero_2)
+     print(Numero_1, "/" ,Numero_2, "=" ,Divisao)
+else:
+    print("Operação invalida")
