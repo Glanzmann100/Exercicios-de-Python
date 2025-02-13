@@ -1,0 +1,7 @@
+def area_quadrado():
+    Lado = float(input("Digite o lado do quadrado: "))
+    Area = (Lado ** 2)
+    Dobro_Area = (Area * 2)
+    Resultado = Dobro_Area
+    print(Resultado)
+area_quadrado()
