@@ -1,0 +1,8 @@
+def calcular_area(Base, Altura):
+    return Base * Altura / 2
+
+Altura = int(input("Digite a Altura do triângulo: "))
+Base = int(input("Digite a Base do triângulo: "))
+
+Resultado = calcular_area(Base, Altura) * 3
+print(Resultado)
