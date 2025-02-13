@@ -1,0 +1,8 @@
+import math
+
+
+def calcular_raio():
+    Raio = float(input("Qual o raio da circunfêrencia: "))
+    Resultado = math.pi * (Raio ** 2)
+    print(Resultado)
+calcular_raio()
