@@ -1,0 +1,6 @@
+def area_quadrado(Lado):
+    Area = Lado ** 2
+    return Area * 2
+Lado = int(input("Digite o lado do quadrado: "))
+Area = area_quadrado(Lado)
+print(Area)
