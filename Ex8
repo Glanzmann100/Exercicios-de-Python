@@ -1,0 +1,7 @@
+def calular_salario():
+    Hora = float(input("Quanto você ganha por hora: "))
+    Numero_de_horas = float(input("Quantas horas você trabalhou esse mês: "))
+    return Hora * Numero_de_horas
+Salario = calular_salario()
+Resultado = (Salario)
+print(Resultado)
