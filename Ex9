@@ -1,0 +1,6 @@
+def Calcular_Temperatura():
+    Temperatura = float(input("Digite o valor da temperatura: "))
+    Celsius =  5 * ((Temperatura - 32) / 9)
+    return Celsius
+Resultado = Calcular_Temperatura()
+print(Resultado)
