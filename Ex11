@@ -1,0 +1,13 @@
+#Faça um Programa que peça 2 números inteiros e um número real. Calcule e mostre: o produto do dobro do primeiro com metade do segundo . triplo do primeiro com o terceiro dividido por 3.o terceiro elevado ao cubo.
+def Calculo_de_Numeros():
+    Primeiro = int(input("Digite Primeiro número: "))
+    Segundo = int(input("Digite o Segundo número: "))
+    Terceiro = float(input("Digite o Terceiro número: "))
+
+    Primeiro1 = (Primeiro * 2 + Segundo / 2) * 2
+    Segundo1 = (((Primeiro + Terceiro) * 3) / 3)
+    Terceiro1 = Terceiro ** 3
+    return Primeiro1, Segundo1, Terceiro1
+
+Resultado = Calculo_de_Numeros()
+print(Resultado)
