@@ -1,0 +1,6 @@
+def Calculo_de_Peso():
+    Altura = float(input("Digite sua altura: "))
+    Peso_Ideal =  72.7 * Altura - 58
+    return Peso_Ideal
+Resultado = Calculo_de_Peso()
+print(Resultado)
