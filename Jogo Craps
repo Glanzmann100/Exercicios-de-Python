@@ -2,38 +2,42 @@
 
 import random
 
-def Lançar_Dados():
+def Lancar_Dados():
     Dado1 = random.randint(1,6)
-    Dado2 = random.randint(1,6)
+    Dado2 = random.randint(1, 6)
     return Dado1 + Dado2
 
-def Começo():
-    print("Bem Vindo ao jogo Craps: ")
-    Primeira_Jogada = Lançar_Dados()
-    if Primeira_Jogada == (7,11):
-        print("Você tirou um natural, Você Ganhou.")
-    elif Primeira_Jogada == (2,3,12):
-        print("Você tirou um Craps, Você Perdeu.")
+def Jogo():
+    print("Bem-Vindo ao Jogo Craps:")
+    print("- 1. Jogue 2 dados e sua soma será seu Ponto.")
+    print("- 2. Se na sua primeira jogada sua soma for igual a 2, 3 ou 12, '!Craps!'")
+    print("- 3. Se em sua primeira jogada sua soma for igual a 7 ou 11, você obteve um 'Natural'.")
+    print("- 4. Ao tirar seu ponto, você terá que tirá-lo novamente antes de tirar um 7, se não você perde.")
+
+    Primeira_Jogada = Lancar_Dados()
+    if Primeira_Jogada in (7,11):
+        print("Você tirou um Natural, Parabéns você ganhou. ")
+    elif Primeira_Jogada in (2,3,12):
+        print("Você tirou um Craps, Você perdeu. ")
     else:
         Ponto = Primeira_Jogada
-        print(f"Seu ponto é: {Ponto}. Continue jogando até tirar {Ponto} novamente ou um 7.")
+        print(f"Seu ponto é {Ponto}, tente tira-lo novamente.")
 
-    while True:
-        Nova_Jogada = Lançar_Dados()
-        print(f"Você tirou {Nova_Jogada}")
-        if Nova_Jogada == Ponto:
-            print("Você tirou o Ponto, Você Ganhou")
-            break
-        elif Nova_Jogada == 7:
-            print("Você tirou o 7, Você Perdeu")
-            break
+        while True:
+            Nova_Jogada = Lancar_Dados()
+            print(f"Você tirou {Nova_Jogada}")
+            if Nova_Jogada == Ponto:
+                print(f"Você tirou {Ponto} novamente, Você Ganhou.")
+                break
+            elif Nova_Jogada == 7:
+                print("Você tirou o 7, Você Perdeu.")
+                break
 
 def Continuar():
     while True:
-        Começo()
-        Continuar = input("Deseja continuar o jogo (s/n)? ")
+        Jogo()
+        Continuar = input("Deseja continuar (s/n)? ")
         if Continuar != 's':
+            print("Esperamos que tenha se divertido, até a próxima.")
             break
-
-Começo()
 Continuar()
