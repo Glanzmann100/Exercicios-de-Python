@@ -1,0 +1,10 @@
+def Caracteres(x):
+    return x
+
+x = int(input("Digite o caractere: "))
+if x < 0:
+    print("Esse numero é negativo")
+else:
+    print("Esse numero é positivo")
+
+Resultado = Caracteres(x)
