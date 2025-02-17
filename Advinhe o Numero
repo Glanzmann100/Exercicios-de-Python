@@ -1,0 +1,46 @@
+import random
+
+def Jogo(Pontuacao1, Pontuacao2):
+    print("-------------------------------------")
+    Jogador1 = int(input("Escolha um número (1/5): "))
+    Jogador2 = random.randint(1,5)
+    Computador = random.randint(1,5)
+    print(f"O computador escolheu o número {Computador}")
+
+    if Jogador1 == Computador:
+        print("Você acertou o número, parabéns!")
+        Pontuacao1 += 1
+    else:
+        print("Você ERROU")
+
+    if Jogador2 == Computador:
+        print("O Oponente acertou o número")
+        Pontuacao2 += 1
+    else:
+        print("Oponente ERROU")
+
+    return Pontuacao1, Pontuacao2
+
+def exibir_placar(Pontuacao1, Pontuacao2):
+    print(f"Jogador:{Pontuacao1}                  Oponente:{Pontuacao2}")
+
+def Placar():
+    Pontuacao1 = 0
+    Pontuacao2 = 0
+    while True:
+        Pontuacao1, Pontuacao2 = Jogo(Pontuacao1, Pontuacao2)
+        exibir_placar(Pontuacao1, Pontuacao2)
+        if Pontuacao1 == 5:
+            print("Você venceu. ")
+            break
+        elif Pontuacao2 == 5:
+            print("Você perdeu")
+            break
+
+def Contiuar():
+    while True:
+        Placar()
+        Nova = input("Deseja jogar uma nova partida (s/n)? ")
+        if Nova != 's':
+            break
+Contiuar()
