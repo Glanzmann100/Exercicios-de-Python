@@ -1,0 +1,38 @@
+import random
+
+def Soma(Jogador1, Jogador2):
+    return Jogador1 + Jogador2
+
+def Jogo(Pontuacao1, Pontuacao2):
+    Jogada = input("Par ou Ímpar: ").lower()
+    Jogador1 = int(input("Escolha um número entre (1/10): "))
+    Jogador2 = random.randint(1,10)
+    Resultado = Soma(Jogador1, Jogador2)
+
+    if (Jogada == 'par' and Resultado % 2 == 0) or (Jogada == 'impar' and Resultado % 2 != 0):
+        print(f"Você jogou {Jogador1} e o Oponente jogou {Jogador2}")
+        print("Você Venceu")
+        Pontuacao1 += 1
+    else:
+        print(f"Você jogou {Jogador1} e o Oponente jogou {Jogador2}")
+        print("Você Perdeu")
+        Pontuacao2 += 1
+    return Pontuacao1, Pontuacao2
+
+def exibir_placar(Pontuacao1, Pontuacao2):
+    print(f"Placar: Jogador1 = {Pontuacao1} Jogador2 = {Pontuacao2}")
+
+def Placar():
+    Pontuacao1 = 0
+    Pontuacao2 = 0
+
+    while True:
+        Pontuacao1, Pontuacao2 = Jogo(Pontuacao1,Pontuacao2)
+        exibir_placar(Pontuacao1,Pontuacao2)
+        if Pontuacao1 == 5:
+            print("Você Venceu")
+            break
+        elif Pontuacao2 == 5:
+            print("Você Perdeu")
+            break
+Placar()
