@@ -1,0 +1,12 @@
+def Tabuada():
+    Num = int(input("Escolha um número: "))
+    for i in range(1,11):
+        Resultado = Num * i
+        print(f"{Num} . {i} = {Resultado}")
+def Continuar_Tabuada():
+    while True:
+        Tabuada()
+        Continuar = input("Deseja ver a tabuada de outro número (s/n)? ")
+        if Continuar != 's':
+            break
+Continuar_Tabuada()
