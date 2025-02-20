@@ -1,0 +1,9 @@
+# Numeros dentro de um array
+numeros = [1,2,3,4,5,6]
+for i in numeros:
+    print(f"{i} esta na lista de numeros")
+
+# Letras dentro de uma palavra
+palavra = 'matheus'
+for i in palavra:
+    print(f"{i} esta na palavra matheus")
