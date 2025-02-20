@@ -1,0 +1,9 @@
+arr =  [7,6,5,8,9,4]
+
+def Subtracao(arr):
+    Subtracao = 0
+    for i in arr:
+        Subtracao -= i
+    return Subtracao
+Resultado = Subtracao(arr)
+print(Resultado)
