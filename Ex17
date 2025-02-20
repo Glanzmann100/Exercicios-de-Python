@@ -1,0 +1,9 @@
+arr =  [7,6,5,8,9,4]
+
+def Soma(arr):
+    Soma = 0
+    for i in arr:
+        Soma += i
+    return Soma
+Resultado = Soma(arr)
+print(Resultado)
