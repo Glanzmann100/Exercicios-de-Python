@@ -1,0 +1,10 @@
+arr = [1,2,3,4,5,6,7,8,9]
+
+def Maior(arr):
+    maior = arr[0]
+    for i in arr:
+        if i > maior:
+            maior = i
+    return maior
+resultado = Maior(arr)
+print(resultado)
