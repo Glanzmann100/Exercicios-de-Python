@@ -1,0 +1,9 @@
+def Palindromo(s):
+    return s == s[::-1]
+
+Texto = input("Digite a palavra: ")
+
+if Palindromo(Texto):
+    print(f"{Texto} é um Palindromo")
+else:
+    print("Isso não é um Palindromo")
