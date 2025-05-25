@@ -1,0 +1,19 @@
+from itertools import count
+
+lista = []
+
+def Lista_Tarefas():
+    while True:
+        for i in count(1,):
+            tarefa = input(f"{i}-Adicione uma tarefa: ")
+            Continuar = input("Deseja adicionar mais alguma tarefa? (s/n)")
+            if Continuar == "s":
+                lista.append(tarefa)
+                for tarefa in lista:
+                    print("[]","-",tarefa)
+            else:
+                lista.append(tarefa)
+                for tarefa in lista:
+                    print("[]","-",tarefa)
+                break
+Lista_Tarefas()
