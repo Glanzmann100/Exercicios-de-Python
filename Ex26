@@ -1,0 +1,10 @@
+def media(list):
+    list = []
+    while True:
+        n = int(input("number: "))
+        list.append(n)
+        media = sum(list) / len(list)
+        Continue = input("continue (s/n)? ")
+        if Continue == "n":
+            return (media)
+print(media(list))
