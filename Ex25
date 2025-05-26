@@ -1,0 +1,10 @@
+positivos = 0
+
+while True:
+    numero = float(input("Digite um número: "))
+    if numero > 0: 
+        positivos += 1
+    continuar = input("Deseja continuar (s/n): ")
+    if continuar == "n":
+        print("O número de positivos foi",positivos)
+        break
