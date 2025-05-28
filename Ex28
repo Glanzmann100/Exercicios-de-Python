@@ -1,0 +1,9 @@
+def Contagem():
+    contagem = 0
+    palavra = input("Digite uma palavra: ")
+    letra_escolhida = input("Escolha uma letra dessa palavra: ")
+    for letra in palavra:
+        if letra in letra_escolhida:
+            contagem += 1
+    return contagem
+print(Contagem())
