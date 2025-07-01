@@ -1,0 +1,5 @@
+numeros = [1,2,3,4]
+letras = ["a", "b", "c", "d"]
+
+numeros.extend(letras)
+print(numeros)
