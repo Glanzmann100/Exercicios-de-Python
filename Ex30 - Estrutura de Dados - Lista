@@ -1,0 +1,3 @@
+cidades = ["Rio de Janeiro", "Salvador", "Sao Paulo"]
+cidades[0] = "Brasilia"
+print(cidades)
