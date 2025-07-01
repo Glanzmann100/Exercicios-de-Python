@@ -1,0 +1,5 @@
+# cidades.append("Juiz de Fora") --> Adiciona um novo item a minha lista
+#cidades.insert(1, "Santa Catarina") -- Adiciona o novo item na posição 1
+#cidades.remove("Salvador") --> Remove um item da lista
+#cidades.pop(1) --> Remove o item da posição 1
+#cidades.sort() --> Organiza os items em ordem alfabética
