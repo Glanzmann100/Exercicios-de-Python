@@ -1,0 +1,28 @@
+import numpy as np
+
+#Array 1D
+d1 = np.array([1,2,3,4])
+print(d1)
+
+#Tamanho
+print(d1.shape)
+
+#Número de Dimensões
+print(d1.ndim)
+
+#Número de bytes
+print(d1.dtype)
+
+#Exemplo de uma array em 2 Dimensões 
+d2 = np.array([[1,2,3,4], [5,6,7,8]])
+print(d2)
+print(d2.shape)
+print(d2.ndim)
+print(d2.dtype)
+
+#      [[1 2 3 4]
+#      [5 6 7 8]]
+
+#axix0 = vertical , axis1 = horizontal
+
+#Obs = d3 seria so colocar mais um array dentro d3 = np.array([[[1,2,3,4], [5,6,7,8], [9,10,11,12]]])
